@@ -1,0 +1,42 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif !important;
+    position: relative;
+}
+
+.header-main{
+
+  background: url(../images/Header-bg.png) 100% 100% no-repeat;
+  background-size: cover;
+  color: white;
+  height: 40rem;
+  position: relative;
+}
+
+.header-main .header-content .header-img img{
+  position: absolute;
+  right: 0px;
+  top: 30px;
+}
+.header-main .header-content h1{
+  padding-top: 5rem;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+  .header-main .header-content .header-img img{
+    top: 140px;
+    width: 35rem;
+  }
+  
+}
+@media only screen and (max-width: 992px) {
+  .header-main .header-content .header-img img{
+    opacity: 0.1;
+  }
+  
+}
