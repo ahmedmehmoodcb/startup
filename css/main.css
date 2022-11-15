@@ -11,19 +11,22 @@ body {
   background: url(../images/Header-bg.png) 100% 100% no-repeat;
   background-size: cover;
   color: white;
-  height: 40rem;
+  height: 42rem;
   position: relative;
 }
 
 .header-main .header-content .header-img img{
   position: absolute;
   right: 0px;
-  top: 30px;
+  top: 8rem;
 }
 .header-main .header-content h1{
-  padding-top: 5rem;
+  padding-top: 4rem;
+  font-size: 47px;
 }
-
+.header-main .header-content p{
+  width: 70%;
+}
 
 
 
