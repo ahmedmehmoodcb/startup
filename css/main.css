@@ -1,13 +1,12 @@
 body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: "Poppins", sans-serif !important;
-    position: relative;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif !important;
+  position: relative;
 }
 
-.header-main{
-
+.header-main {
   background: url(../images/Header-bg.png) 100% 100% no-repeat;
   background-size: cover;
   color: white;
@@ -15,37 +14,111 @@ body {
   position: relative;
 }
 
-.header-main .header-content .header-img img{
+.header-main .header-content .header-img img {
   position: absolute;
   right: 0px;
   top: 8rem;
 }
-.header-main .header-content h1{
+.header-main .header-content h1 {
   padding-top: 4rem;
   font-size: 47px;
 }
-.header-main .header-content p{
+.header-main .header-content p {
   width: 70%;
 }
+section.prices {
+  background: url(../images/prices.svg) no-repeat;
+  padding: 24px 0;
+  background-size: 64% 100%;
+  background-position: right;
+  border-bottom: 2px solid #c9ccce;
+}
+.prices .inner-header-detail h2 span:before {
+  background: url(../images/price-bar.png);
+  width: 95%;
+}
 
-
-
+.plan {
+  background: #f2f2f2;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 32%);
+  border-radius: 9px;
+  padding: 94px 75px 79px;
+}
+.plan.detail.mt-5 {
+  background: #c75b50;
+  padding: 14px 75px 0px;
+  min-height: 445px;
+  margin-top: 6px !important;
+  position: relative;
+  z-index: 1;
+  width: 472px;
+  margin-left: -12px;
+  color: #fff;
+}
+.title-header {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  color: #ffffff;
+  margin-top: 30px;
+}
+.detail-prices-bar {
+}
+.detail-prices-bar ul {
+  margin: 0;
+  padding: 0;
+}
+.detail-prices-bar ul li {
+  list-style: none;
+  background: #cd6b62;
+  border-radius: 44px;
+  padding: 8px;
+  margin: 10px 0;
+  font-weight: 300;
+}
+.title {
+  margin-top: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 31px;
+  color: #c75b50;
+}
+.detail small {
+  font-weight: 300;
+  font-size: 17px;
+}
+.limited {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 22px;
+}
+.title span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 69px;
+  color: #000000;
+}
 section.gdfys {
   background: url(/images/gdfys-bg.png) no-repeat;
   background-size: cover;
   padding: 24px 0;
 }
-.gdfys-inner-detail h2 {
+.inner-header-detail h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 42px;
   line-height: 129.5%;
   position: relative;
 }
-.gdfys-inner-detail h2 span {
+.inner-header-detail h2 span {
   position: relative;
 }
-.gdfys-inner-detail h2 span:before {
+.inner-header-detail h2 span:before {
   content: "";
   position: absolute;
   background: url(../images/before-line.svg);
@@ -56,7 +129,7 @@ section.gdfys {
   right: 0;
   z-index: 0;
 }
-.gdfys-inner-detail p {
+.inner-header-detail p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
@@ -107,19 +180,39 @@ footer {
   color: #ffffff;
 }
 
-
-
 @media only screen and (max-width: 1300px) {
-  .header-main .header-content .header-img img{
+  .header-main .header-content .header-img img {
     top: 140px;
     width: 35rem;
   }
-  
 }
 @media only screen and (max-width: 992px) {
-  .header-main .header-content .header-img img{
+  .header-main .header-content .header-img img {
     opacity: 0.1;
   }
-  
 }
 
+@media screen and (max-width: 991px) and (min-width: 320px) {
+  .plan.detail.mt-5 {
+    margin-top: 29px !important;
+    background: #c75b50;
+    padding: 14px 75px 0px;
+    min-height: 445px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-left: 0;
+    color: #fff;
+  }
+  section.prices {
+    background: url(../images/prices.svg) no-repeat;
+    padding: 24px 0;
+    background-size: cover;
+    background-position: right bottom;
+    border-bottom: 2px solid #c9ccce;
+  }
+  .prices .p-0 {
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+  }
+}
